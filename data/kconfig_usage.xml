@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<KconfigRoot>
+	<file fileName="src/modules/ekf2/EKF/baro_height_control.cpp">
+		<Kconfig name="CONFIG_EKF2_BARO_COMPENSATION">
+			<line>54</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/common.h">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>349</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>256</line>
+			<line>487</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BARO_COMPENSATION">
+			<line>461</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>249</line>
+			<line>473</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>233</line>
+			<line>399</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>344</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>374</line>
+			<line>418</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>374</line>
+			<line>378</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>357</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>108</line>
+			<line>365</line>
+			<line>374</line>
+			<line>632</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/control.cpp">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>116</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>136</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>124</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>131</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>105</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>110</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>120</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/covariance.cpp">
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>425</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>418</line>
+			<line>438</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>182</line>
+			<line>191</line>
+			<line>552</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>71</line>
+			<line>432</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/ekf.cpp">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>127</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>157</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>112</line>
+			<line>124</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>137</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>148</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>116</line>
+			<line>152</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>161</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>69</line>
+			<line>166</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>130</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>196</line>
+			<line>236</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/ekf.h">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>287</line>
+			<line>513</line>
+			<line>668</line>
+			<line>838</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>185</line>
+			<line>546</line>
+			<line>702</line>
+			<line>1135</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>92</line>
+			<line>725</line>
+			<line>1149</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BARO_COMPENSATION">
+			<line>1054</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>281</line>
+			<line>621</line>
+			<line>863</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>86</line>
+			<line>211</line>
+			<line>239</line>
+			<line>267</line>
+			<line>507</line>
+			<line>524</line>
+			<line>678</line>
+			<line>1067</line>
+			<line>1212</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>204</line>
+			<line>232</line>
+			<line>260</line>
+			<line>535</line>
+			<line>695</line>
+			<line>811</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>193</line>
+			<line>221</line>
+			<line>249</line>
+			<line>275</line>
+			<line>390</line>
+			<line>412</line>
+			<line>539</line>
+			<line>737</line>
+			<line>826</line>
+			<line>969</line>
+			<line>1089</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>124</line>
+			<line>158</line>
+			<line>640</line>
+			<line>651</line>
+			<line>930</line>
+			<line>947</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>116</line>
+			<line>144</line>
+			<line>635</line>
+			<line>646</line>
+			<line>920</line>
+			<line>940</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>293</line>
+			<line>517</line>
+			<line>671</line>
+			<line>854</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>101</line>
+			<line>626</line>
+			<line>909</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/ekf_helper.cpp">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>748</line>
+			<line>856</line>
+			<line>1057</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>358</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>203</line>
+			<line>715</line>
+			<line>923</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BARO_COMPENSATION">
+			<line>250</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>156</line>
+			<line>206</line>
+			<line>325</line>
+			<line>483</line>
+			<line>508</line>
+			<line>541</line>
+			<line>674</line>
+			<line>692</line>
+			<line>734</line>
+			<line>980</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>668</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>243</line>
+			<line>658</line>
+			<line>796</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>530</line>
+			<line>589</line>
+			<line>704</line>
+			<line>762</line>
+			<line>850</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>210</line>
+			<line>573</line>
+			<line>727</line>
+			<line>755</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>770</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>214</line>
+			<line>754</line>
+			<line>787</line>
+			<line>927</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/estimator_interface.cpp">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>59</line>
+			<line>264</line>
+			<line>567</line>
+			<line>736</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>71</line>
+			<line>415</line>
+			<line>558</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>53</line>
+			<line>226</line>
+			<line>724</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>68</line>
+			<line>104</line>
+			<line>486</line>
+			<line>754</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>65</line>
+			<line>376</line>
+			<line>596</line>
+			<line>748</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>187</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>50</line>
+			<line>109</line>
+			<line>718</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>62</line>
+			<line>339</line>
+			<line>590</line>
+			<line>742</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>56</line>
+			<line>301</line>
+			<line>579</line>
+			<line>730</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/estimator_interface.h">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>99</line>
+			<line>352</line>
+			<line>427</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>133</line>
+			<line>435</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>95</line>
+			<line>442</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>397</line>
+			<line>476</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>128</line>
+			<line>356</line>
+			<line>431</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>390</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>89</line>
+			<line>238</line>
+			<line>422</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>115</line>
+			<line>368</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>69</line>
+			<line>103</line>
+			<line>360</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/ev_yaw_control.cpp">
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>182</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/gps_control.cpp">
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>189</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>85</line>
+			<line>180</line>
+			<line>317</line>
+			<line>407</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>282</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/height_control.cpp">
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>44</line>
+			<line>182</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>202</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>52</line>
+			<line>196</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/mag_control.cpp">
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>126</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/range_height_control.cpp">
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>205</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF/terrain_estimator.cpp">
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>48</line>
+			<line>77</line>
+			<line>270</line>
+			<line>437</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>52</line>
+			<line>73</line>
+			<line>104</line>
+			<line>428</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF2.cpp">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>93</line>
+			<line>226</line>
+			<line>385</line>
+			<line>439</line>
+			<line>702</line>
+			<line>992</line>
+			<line>1370</line>
+			<line>1462</line>
+			<line>1516</line>
+			<line>1966</line>
+			<line>2032</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>64</line>
+			<line>233</line>
+			<line>392</line>
+			<line>705</line>
+			<line>1041</line>
+			<line>1357</line>
+			<line>1449</line>
+			<line>1503</line>
+			<line>2101</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>75</line>
+			<line>263</line>
+			<line>449</line>
+			<line>708</line>
+			<line>738</line>
+			<line>809</line>
+			<line>1000</line>
+			<line>1087</line>
+			<line>1351</line>
+			<line>1418</line>
+			<line>1442</line>
+			<line>1496</line>
+			<line>1811</line>
+			<line>2131</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BARO_COMPENSATION">
+			<line>82</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>197</line>
+			<line>923</line>
+			<line>1367</line>
+			<line>1459</line>
+			<line>1513</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>157</line>
+			<line>273</line>
+			<line>711</line>
+			<line>745</line>
+			<line>850</line>
+			<line>1014</line>
+			<line>1131</line>
+			<line>1348</line>
+			<line>1413</line>
+			<line>1439</line>
+			<line>1493</line>
+			<line>2177</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>311</line>
+			<line>1026</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>104</line>
+			<line>236</line>
+			<line>329</line>
+			<line>347</line>
+			<line>395</line>
+			<line>469</line>
+			<line>718</line>
+			<line>763</line>
+			<line>968</line>
+			<line>1030</line>
+			<line>1364</line>
+			<line>1456</line>
+			<line>1510</line>
+			<line>1693</line>
+			<line>1700</line>
+			<line>1733</line>
+			<line>1816</line>
+			<line>2438</line>
+			<line>2683</line>
+			<line>2753</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MULTI_INSTANCE">
+			<line>45</line>
+			<line>245</line>
+			<line>491</line>
+			<line>537</line>
+			<line>2730</line>
+			<line>2903</line>
+			<line>2929</line>
+			<line>2956</line>
+			<line>3001</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>133</line>
+			<line>171</line>
+			<line>240</line>
+			<line>254</line>
+			<line>399</line>
+			<line>714</line>
+			<line>753</line>
+			<line>945</line>
+			<line>1046</line>
+			<line>1058</line>
+			<line>1360</line>
+			<line>1383</line>
+			<line>1403</line>
+			<line>1407</line>
+			<line>1452</line>
+			<line>1475</line>
+			<line>1506</line>
+			<line>1527</line>
+			<line>1985</line>
+			<line>2333</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>133</line>
+			<line>141</line>
+			<line>229</line>
+			<line>319</line>
+			<line>388</line>
+			<line>721</line>
+			<line>742</line>
+			<line>824</line>
+			<line>1005</line>
+			<line>1052</line>
+			<line>1116</line>
+			<line>1354</line>
+			<line>1380</line>
+			<line>1422</line>
+			<line>1445</line>
+			<line>1472</line>
+			<line>1499</line>
+			<line>1524</line>
+			<line>2484</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>99</line>
+			<line>996</line>
+			<line>1373</line>
+			<line>1465</line>
+			<line>1519</line>
+			<line>1970</line>
+			<line>2576</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>133</line>
+			<line>136</line>
+			<line>1051</line>
+			<line>1289</line>
+			<line>1379</line>
+			<line>1407</line>
+			<line>1471</line>
+			<line>1523</line>
+			<line>1601</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/EKF2.hpp">
+		<Kconfig name="CONFIG_EKF2_AIRSPEED">
+			<line>92</line>
+			<line>210</line>
+			<line>409</line>
+			<line>565</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_AUXVEL">
+			<line>97</line>
+			<line>213</line>
+			<line>360</line>
+			<line>516</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BAROMETER">
+			<line>101</line>
+			<line>177</line>
+			<line>216</line>
+			<line>392</line>
+			<line>541</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_BARO_COMPENSATION">
+			<line>549</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_DRAG_FUSION">
+			<line>740</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_EXTERNAL_VISION">
+			<line>186</line>
+			<line>219</line>
+			<line>334</line>
+			<line>653</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_GNSS_YAW">
+			<line>354</line>
+			<line>489</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MAGNETOMETER">
+			<line>105</line>
+			<line>226</line>
+			<line>246</line>
+			<line>313</line>
+			<line>587</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_MULTI_INSTANCE">
+			<line>146</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>109</line>
+			<line>200</line>
+			<line>222</line>
+			<line>376</line>
+			<line>382</line>
+			<line>627</line>
+			<line>683</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>114</line>
+			<line>182</line>
+			<line>229</line>
+			<line>371</line>
+			<line>441</line>
+			<line>627</line>
+			<line>635</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_SIDESLIP">
+			<line>423</line>
+			<line>578</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_TERRAIN">
+			<line>369</line>
+			<line>627</line>
+			<line>630</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/Utility/PreFlightChecker.cpp">
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>85</line>
+			<line>175</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>120</line>
+			<line>170</line>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/Utility/PreFlightChecker.hpp">
+		<Kconfig name="CONFIG_EKF2_OPTICAL_FLOW">
+			<line>78</line>
+			<line>181</line>
+		</Kconfig>
+		<Kconfig name="CONFIG_EKF2_RANGE_FINDER">
+			<line>87</line>
+			<line>176</line>
+		</Kconfig>
+	</file>
+</KconfigRoot>

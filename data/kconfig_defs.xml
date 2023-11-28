@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<KconfigRoot>
+	<file fileName="Kconfig">
+		<Kconfig name="BOARD_ARCHITECTURE">
+			<type>string</type>
+			<prompt depends="">"Architecture"</prompt>
+			<default depends="">""</default>
+			<filepath>Kconfig</filepath>
+			<lineno>53</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_COMPILE_DEFINITIONS">
+			<type>string</type>
+			<prompt depends="">"add custom compile definitions"</prompt>
+			<help>add custom compile defitions to this specific target</help>
+			<filepath>Kconfig</filepath>
+			<lineno>115</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_CONSTRAINED_FLASH">
+			<type>bool</type>
+			<prompt depends="">"Contrained flash"</prompt>
+			<help>flag to enable constrained flash options (eg limit init script status text)</help>
+			<filepath>Kconfig</filepath>
+			<lineno>90</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_CONSTRAINED_MEMORY">
+			<type>bool</type>
+			<prompt depends="">"Contrained memory"</prompt>
+			<help>flag to enable constrained memory options (eg limit maximum number of uORB publications)</help>
+			<filepath>Kconfig</filepath>
+			<lineno>100</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_CRYPTO">
+			<type>bool</type>
+			<prompt depends="">"Crypto support"</prompt>
+			<help>Enable PX4 Crypto Support. Select the implementation under drivers</help>
+			<filepath>Kconfig</filepath>
+			<lineno>133</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_ETHERNET">
+			<type>bool</type>
+			<prompt depends="">"Ethernet"</prompt>
+			<help>flag to indicate that ethernet is enabled</help>
+			<filepath>Kconfig</filepath>
+			<lineno>128</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_EXTERNAL_METADATA">
+			<type>bool</type>
+			<prompt depends="">"External metadata"</prompt>
+			<help>flag to exclude metadata to reduce flash</help>
+			<filepath>Kconfig</filepath>
+			<lineno>105</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_FULL_OPTIMIZATION">
+			<type>bool</type>
+			<prompt depends="">"Full optmization (O3)"</prompt>
+			<default depends="">0</default>
+			<help>Enables Cmake Release for -O3 optimization</help>
+			<filepath>Kconfig</filepath>
+			<lineno>64</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_IO">
+			<type>string</type>
+			<prompt depends="(&quot;DRIVERS_PX4IO&quot;)">"IO board name"</prompt>
+			<default depends="(&quot;DRIVERS_PX4IO&quot;)">"px4_io-v2_default"</default>
+			<depends>("DRIVERS_PX4IO")</depends>
+			<help>name of IO board to be built and included in the ROMFS (requires a valid ROMFSROOT)</help>
+			<filepath>Kconfig</filepath>
+			<lineno>83</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_LINKER_PREFIX">
+			<type>string</type>
+			<prompt depends="">"linker prefix"</prompt>
+			<help>optional to prefix on the Linker script.</help>
+			<filepath>Kconfig</filepath>
+			<lineno>110</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_LINUX_TARGET">
+			<type>bool</type>
+			<prompt depends="(PLATFORM_POSIX)">"Linux OS Target"</prompt>
+			<depends>(PLATFORM_POSIX)</depends>
+			<help>Board Platform is running the Linux operating system</help>
+			<filepath>Kconfig</filepath>
+			<lineno>43</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_LOCKSTEP">
+			<type>bool</type>
+			<prompt depends="(PLATFORM_POSIX)">"Force enable lockstep"</prompt>
+			<depends>(PLATFORM_POSIX)</depends>
+			<help>forces lockstep behaviour, despite REPLAY env variable</help>
+			<filepath>Kconfig</filepath>
+			<lineno>31</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_LTO">
+			<type>bool</type>
+			<prompt depends="">"(EXPERIMENTAL) Link Time Optimization (LTO)"</prompt>
+			<default depends="">0</default>
+			<help>Enables LTO flag in linker
+Note: Highly EXPERIMENTAL, furthermore make sure you're using a modern compiler GCC 9 or later</help>
+			<filepath>Kconfig</filepath>
+			<lineno>57</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_NOLOCKSTEP">
+			<type>bool</type>
+			<prompt depends="(PLATFORM_POSIX)">"Force disable lockstep"</prompt>
+			<depends>(PLATFORM_POSIX)</depends>
+			<help>forces nolockstep behaviour, despite REPLAY env variable</help>
+			<filepath>Kconfig</filepath>
+			<lineno>37</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_NO_HELP">
+			<type>bool</type>
+			<prompt depends="">"No help"</prompt>
+			<help>optional condition flag to disable help text on constrained flash systems</help>
+			<filepath>Kconfig</filepath>
+			<lineno>95</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_PLATFORM">
+			<type>string</type>
+			<default depends="(PLATFORM_NUTTX)">"nuttx"</default>
+			<default depends="(PLATFORM_POSIX)">"posix"</default>
+			<default depends="(PLATFORM_QURT)">"qurt"</default>
+			<default depends="(PLATFORM_ROS2)">"ros2"</default>
+			<filepath>Kconfig</filepath>
+			<lineno>24</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_PROTECTED">
+			<type>bool</type>
+			<prompt depends="">"Memory protection"</prompt>
+			<help>Enable memory protection via MPU/MMU</help>
+			<filepath>Kconfig</filepath>
+			<lineno>138</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_ROMFSROOT">
+			<type>string</type>
+			<prompt depends="">"ROMFSROOT"</prompt>
+			<default depends="">"px4fmu_common"</default>
+			<help>relative path to the ROMFS root directory</help>
+			<filepath>Kconfig</filepath>
+			<lineno>70</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_ROOTFSDIR">
+			<type>string</type>
+			<prompt depends="(PLATFORM_POSIX)">"Root directory"</prompt>
+			<default depends="(PLATFORM_POSIX)">"."</default>
+			<depends>(PLATFORM_POSIX)</depends>
+			<help>Configure the root directory in the file system for PX4 files</help>
+			<filepath>Kconfig</filepath>
+			<lineno>76</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_EXT2">
+			<type>string</type>
+			<prompt depends="">"EXT2 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>184</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_GPS1">
+			<type>string</type>
+			<prompt depends="">"GPS1 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>148</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_GPS2">
+			<type>string</type>
+			<prompt depends="">"GPS2 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>151</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_GPS3">
+			<type>string</type>
+			<prompt depends="">"GPS3 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>154</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_GPS4">
+			<type>string</type>
+			<prompt depends="">"GPS4 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>157</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_GPS5">
+			<type>string</type>
+			<prompt depends="">"GPS5 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>160</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_RC">
+			<type>string</type>
+			<prompt depends="">"RC tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>178</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_TEL1">
+			<type>string</type>
+			<prompt depends="">"TEL1 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>163</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_TEL2">
+			<type>string</type>
+			<prompt depends="">"TEL2 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>166</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_TEL3">
+			<type>string</type>
+			<prompt depends="">"TEL3 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>169</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_TEL4">
+			<type>string</type>
+			<prompt depends="">"TEL4 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>172</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_TEL5">
+			<type>string</type>
+			<prompt depends="">"TEL5 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>175</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_URT6">
+			<type>string</type>
+			<prompt depends="">"URT6 tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>145</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_SERIAL_WIFI">
+			<type>string</type>
+			<prompt depends="">"WIFI tty port"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>181</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_TESTING">
+			<type>bool</type>
+			<prompt depends="">"Testing"</prompt>
+			<select depends="">"SYSTEMCMDS_TESTS"</select>
+			<help>flag to enable automatic inclusion of PX4 testing modules</help>
+			<filepath>Kconfig</filepath>
+			<lineno>121</lineno>
+		</Kconfig>
+		<Kconfig name="BOARD_TOOLCHAIN">
+			<type>string</type>
+			<prompt depends="">"Toolchain"</prompt>
+			<default depends="">""</default>
+			<filepath>Kconfig</filepath>
+			<lineno>49</lineno>
+		</Kconfig>
+		<Kconfig name="PLATFORM_NUTTX">
+			<type>bool</type>
+			<prompt depends="">"nuttx"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>14</lineno>
+		</Kconfig>
+		<Kconfig name="PLATFORM_POSIX">
+			<type>bool</type>
+			<prompt depends="">"posix"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>16</lineno>
+		</Kconfig>
+		<Kconfig name="PLATFORM_QURT">
+			<type>bool</type>
+			<prompt depends="">"qurt"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>18</lineno>
+		</Kconfig>
+		<Kconfig name="PLATFORM_ROS2">
+			<type>bool</type>
+			<prompt depends="">"ros2"</prompt>
+			<filepath>Kconfig</filepath>
+			<lineno>20</lineno>
+		</Kconfig>
+	</file>
+	<file fileName="src/modules/ekf2/Kconfig">
+		<Kconfig name="EKF2_AIRSPEED">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2 &amp;&amp; EKF2_SIDESLIP)">"airspeed fusion support"</prompt>
+			<default depends="(MODULES_EKF2 &amp;&amp; EKF2_SIDESLIP)">1</default>
+			<depends>(MODULES_EKF2 &amp;&amp; EKF2_SIDESLIP)</depends>
+			<help>EKF2 airspeed fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>16</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_AUXVEL">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"aux velocity fusion support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 auxiliary velocity fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>24</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_BAROMETER">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"barometer support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 barometer support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>31</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_BARO_COMPENSATION">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2 &amp;&amp; EKF2_BAROMETER)">"barometer compensation support"</prompt>
+			<default depends="(MODULES_EKF2 &amp;&amp; EKF2_BAROMETER)">1</default>
+			<depends>(MODULES_EKF2 &amp;&amp; EKF2_BAROMETER)</depends>
+			<help>EKF2 pressure compensation support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>38</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_DRAG_FUSION">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"drag fusion support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 drag fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>46</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_EXTERNAL_VISION">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"external vision (EV) fusion support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 external vision (EV) fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>53</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_GNSS_YAW">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"GNSS yaw fusion support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 GNSS yaw fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>60</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_MAGNETOMETER">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"magnetometer support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 magnetometer support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>67</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_MULTI_INSTANCE">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2 &amp;&amp; !BOARD_CONSTRAINED_MEMORY &amp;&amp; !BOARD_CONSTRAINED_FLASH)">"multi-EKF support"</prompt>
+			<default depends="(MODULES_EKF2 &amp;&amp; !BOARD_CONSTRAINED_MEMORY &amp;&amp; !BOARD_CONSTRAINED_FLASH)">1</default>
+			<depends>(MODULES_EKF2 &amp;&amp; !BOARD_CONSTRAINED_MEMORY &amp;&amp; !BOARD_CONSTRAINED_FLASH)</depends>
+			<help>EKF2 support multiple instances and selector.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>7</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_OPTICAL_FLOW">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2 &amp;&amp; EKF2_RANGE_FINDER)">"optical flow fusion support"</prompt>
+			<default depends="(MODULES_EKF2 &amp;&amp; EKF2_RANGE_FINDER)">1</default>
+			<depends>(MODULES_EKF2 &amp;&amp; EKF2_RANGE_FINDER)</depends>
+			<select depends="(MODULES_EKF2 &amp;&amp; EKF2_RANGE_FINDER)">EKF2_TERRAIN</select>
+			<help>EKF2 optical flow fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>74</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_RANGE_FINDER">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"range finder fusion support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 range finder fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>83</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_SIDESLIP">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2)">"sideslip fusion support"</prompt>
+			<default depends="(MODULES_EKF2)">1</default>
+			<depends>(MODULES_EKF2)</depends>
+			<help>EKF2 sideslip fusion support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>90</lineno>
+		</Kconfig>
+		<Kconfig name="EKF2_TERRAIN">
+			<type>bool</type>
+			<prompt depends="(MODULES_EKF2 &amp;&amp; (EKF2_OPTICAL_FLOW || EKF2_RANGE_FINDER))">"terrain estimator support"</prompt>
+			<default depends="(MODULES_EKF2 &amp;&amp; (EKF2_OPTICAL_FLOW || EKF2_RANGE_FINDER))">1</default>
+			<depends>(MODULES_EKF2 &amp;&amp; (EKF2_OPTICAL_FLOW || EKF2_RANGE_FINDER))</depends>
+			<help>EKF2 terrain estimator support.</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>97</lineno>
+		</Kconfig>
+		<Kconfig name="MODULES_EKF2">
+			<type>bool</type>
+			<prompt depends="">"ekf2"</prompt>
+			<default depends="">0</default>
+			<help>Enable support for ekf2</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>1</lineno>
+		</Kconfig>
+		<Kconfig name="USER_EKF2">
+			<type>bool</type>
+			<prompt depends="(BOARD_PROTECTED &amp;&amp; MODULES_EKF2)">"ekf2 running as userspace module"</prompt>
+			<default depends="(BOARD_PROTECTED &amp;&amp; MODULES_EKF2)">0</default>
+			<depends>(BOARD_PROTECTED &amp;&amp; MODULES_EKF2)</depends>
+			<help>Put ekf2 in userspace memory</help>
+			<filepath>src/modules/ekf2/Kconfig</filepath>
+			<lineno>105</lineno>
+		</Kconfig>
+	</file>
+</KconfigRoot>
