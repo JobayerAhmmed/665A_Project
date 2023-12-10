@@ -1,8 +1,12 @@
 # sankey.py
 import plotly.graph_objects as go
 import pandas as pd
+import os
+import config
 
-df = pd.read_csv("param_classification.csv")
+
+inputFile = os.path.join(config.data_dir, "param_classification.csv")
+df = pd.read_csv(inputFile)
 
 px4_cats = []
 all_cats = []
@@ -56,14 +60,22 @@ for pcat in node_labels:
 			links.append(sink_dict)
 # print(links)
 
-fig = go.Figure(go.Sankey(node=dict(pad=15, thickness=20, line=dict(color="black", width=0.5),
-                                   label=node_labels),
+node_labels2 = [node["label"] if node["label"] not in px4_dict else "" for node in nodes]
+
+total_sink_value = sum(link["value"] for link in links if link["target"] == node_labels.index("Parameters"))
+node_labels2 = [string + ": " + str( format(((sum(link["value"] for link in links if link["source"] == node_labels.index(string))/total_sink_value)*100), '.2f') ) + "%" if string != "" else string for string in node_labels2]
+
+node_labels2 = ["Parameters" if "0.00%" in string else string for string in node_labels2]
+
+
+fig = go.Figure(go.Sankey(node=dict(pad=50, thickness=20, line=dict(color="black", width=0.5),
+                                   label=node_labels2),
                            link=dict(source=[link["source"] for link in links],
                                      target=[link["target"] for link in links],
                                      value=[link["value"] for link in links])))
 
 
-fig.update_layout(title_text="PX4 Parameter Categorization", font_size=10)
+fig.update_layout(title_text="PX4 Parameter Categorization", font_size=14)
 
 fig.show()
 
