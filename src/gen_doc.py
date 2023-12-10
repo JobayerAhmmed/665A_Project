@@ -57,3 +57,12 @@ def fix_help():
                 for line in f:
                     print(line.replace(search_text, replacement_text), end='')
 
+
+def fix_rsource():
+    """Replace rsource attribute by source with relative paths.
+    
+    Few Kconfig files contain rsource to connect to other Kconfig
+    files in a directory. AutoConfDoc does not work on rsource
+    because it uses kextract which does not recognize rsoure.
+    """
+    pass
