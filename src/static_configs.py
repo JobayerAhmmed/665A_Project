@@ -45,10 +45,8 @@ def parse_defs_xml(xml_file: str):
     #     }
     # }
     data = {}
-    filenames = []
     for node_file in node_KconfigRoot:
         filename = node_file.attrib['fileName']
-        filenames.append(filename)
         for node_Kconfig in node_file:
             kdef = node_Kconfig.attrib['name']
             node_lineno = node_Kconfig.find('lineno')
@@ -118,6 +116,38 @@ def parse_usage_xml(xml_file: str):
     return data
 
 
+def find_config_types():
+    "Count different type attributes of Kconfig."
+    print('Counting type attributes of Kconfig...')
+
+    defs_xml_file = os.path.join(config.data_dir, 'kconfig_defs.xml')
+    kdef_types = parse_kdef_types(defs_xml_file)
+    print(kdef_types)
+
+
+def parse_kdef_types(xml_file: str):
+    parser = etree.XMLParser(encoding='ascii', recover=True)
+    tree = etree.parse(xml_file, parser=parser)
+    node_KconfigRoot = tree.getroot()
+    # data = { 
+    #     type: count
+    # }
+    data = {}
+    for node_file in node_KconfigRoot:
+        for node_Kconfig in node_file:
+            node_type = node_Kconfig.find('type')
+            kdef_type = ''
+            if node_type is not None:
+                kdef_type = node_type.text
+            if kdef_type in data:
+                data[kdef_type] += 1
+            else:
+                data[kdef_type] = 1
+    return data
+
+
+
 if __name__ == "__main__":
     find_files_and_configs()
+    find_config_types()
     pass
