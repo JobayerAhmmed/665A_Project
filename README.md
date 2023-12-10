@@ -1,6 +1,6 @@
 # 665A Project
 
-- Operating System: Linux (Ubuntu 22.04 LTS)
+The project is developed and experimented on Linux (Ubuntu 22.04 LTS) with Python 3.10.12 
 
 ## Generate Documentation by AutoConfDoc
 
