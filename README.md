@@ -13,6 +13,7 @@ The project is developed and experimented on Linux (Ubuntu 22.04 LTS) with Pytho
 - `mkdir px4_doc && cd px4_doc`
 - `python3 -m venv .venv`
 - `source .venv/bin/activate`
+- `pip install pandas plotly lxml`
 - `git clone -b kextract --single-branch https://github.com/JobayerAhmmed/kmax.git`
 - `cd kmax`
 - `python3 setup.py install`
