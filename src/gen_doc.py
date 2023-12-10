@@ -151,7 +151,7 @@ def run_autoconfdoc():
     """Run AutoConfDoc to generate documentation."""
     print('Running AutoConfDoc...')
     os.chdir(config.px4_src_dir)
-    r = subprocess.run(['./../665A_Project/libs/doxygen', 'Doxyfile'])
+    r = subprocess.run(['./../665A_Project/libs/autoconfdoc', 'Doxyfile'])
     if r.returncode != 0:
         print('Failed to run AutonConfDoc!')
 
