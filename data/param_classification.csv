@@ -1,0 +1,85 @@
+PX4_category,Category1,Category2,Category3
+UAVCAN Motor Parameters,communication,,
+UAVCAN GNSS,communication,,
+ADSB,sensors,communication,
+Actuator Outputs,hardware/motor control,,
+Airspeed Validator,sensors,,
+Attitude Q estimator,vehicle control,,
+Autotune,vehicle control,,
+Battery Calibration,battery,,
+Camera Capture,sensors,,
+Camera Control,sensors,,
+Camera trigger,sensors,,
+Circuit Breaker,special/misc,,
+Commander,flight modes,,
+Cyphal,communication,,
+DShot,communication,,
+EKF2,sensors,,
+ESC,hardware/motor control,,
+Events,events,communication,
+FW Attitude Control,vehicle control,,fixed wing
+FW Auto Landing,autonomous behavior,,fixed wing
+FW Geometry,vehicle control,,fixed wing
+FW Launch detection,events,,fixed wing
+FW NPFG Control,vehicle control,,fixed wing
+FW Path Control,vehicle control,,fixed wing
+FW Performance,limits,vehicle control,fixed wing
+FW Rate Control,vehicle control,,fixed wing
+FW TECS,vehicle control,,fixed wing
+Failure Detector,hardware/motor control,,
+FlightTaskOrbit,limits,,
+Follow target,autonomous behavior,,
+GPS,sensors,,
+Geofence,limits,,
+Geometry,hardware/motor control,vehicle control,
+Hover Thrust Estimator,vehicle control,,
+Iridium SBD,communication,,
+Land Detector,vehicle control,,fixed wing
+Landing Target Estimator,autonomous behavior,,
+Local Position Estimator,sensors,,
+MAVLink,communication,,
+MODAL IO,hardware/motor control,,
+Magnetometer Bias Estimator,sensors,,
+Manual Control,flight modes,vehicle control,
+Mission,autonomous behavior,,
+Mixer Output,autonomous behavior,,multicopter
+Mount,special/misc,vehicle control,multicopter
+Multicopter Acro Mode,flight modes,vehicle control,multicopter
+Multicopter Attitude Control,vehicle control,,multicopter
+Multicopter Position Control,vehicle control,,multicopter
+Multicopter Rate Control,vehicle control,,multicopter
+OSD,communication,,
+PWM Outputs,hardware/motor control,,
+Payload Deliverer,special/misc,,
+Precision Land,autonomous behavior,,
+RC,communication,,
+RC Input,communication,,
+Radio Calibration,communication,,
+Radio Switches,communication,,
+Return Mode,flight modes,autonomous behavior,
+Return To Land,flight modes,autonomous behavior,
+Roboclaw,hardware/motor control,,
+Roboclaw Driver,hardware/motor control,,
+Rover Position Control,vehicle control,,
+Runway Takeoff,vehicle control,,
+SD Logging,logging,,
+SITL,simulation,,
+Sensor Calibration,sensors,,
+Sensors,sensors,,
+Serial,communication,,
+Simulation In Hardware,simulation,,
+Simulator,simulation,,
+System,sensors,,
+Telemetry,sensors,communication,
+Testing,special/misc,,
+Thermal Compensation,sensors,,
+Transponder,communication,,
+UAVCAN,communication,,
+UUV Attitude Control,vehicle control,,underwater
+UUV Position Control,vehicle control,,underwater
+UWB,sensors,,
+UXRCE-DDS Client,communication,,
+VTOL Attitude Control,vehicle control,,
+VTOL Takeoff,vehicle control,,
+Zenoh,communication,,
+Miscellaneous,special/misc,,
