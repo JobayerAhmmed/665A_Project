@@ -24,3 +24,11 @@ The project is developed and experimented on Linux (Ubuntu 22.04 LTS) with Pytho
 
 - `cd 665A_Project/src/`
 - `python3 gen_doc.py`
+
+### Run Config Analysis
+
+- `python3 static_configs.py`
+
+### Run Parameter Analysis
+
+- `python3 sankey.py`
